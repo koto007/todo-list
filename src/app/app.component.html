@@ -5,7 +5,7 @@
             <div class="card">
                 <div class="card-header">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="What needs to be done ?">
+                        <input type="text" class="form-control" placeholder="What needs to be done ?" (keyup)="addItem($event)">
                     </div>
                 </div>
                 <ul class="list-group list-group-flush">
@@ -20,7 +20,7 @@
                     </li>
                 </ul>
                 <div class="card-footer d-flex justify-content-between">
-                    <div>4 items</div>
+                    <div>{{ todoArray.length }} items</div>
                     <button class="btn btn-sm btn-link">Clear completed</button>
                 </div>
               </div>

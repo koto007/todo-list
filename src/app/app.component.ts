@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ɵConsole } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -14,4 +14,17 @@ export class AppComponent {
     'promenade' 
   ];
 
+  public addItem($event: KeyboardEvent): void{
+    if($event.code === "Enter"){
+      const $input: HTMLInputElement|null = $event.target as HTMLInputElement;
+
+      if($input !== null){
+        console.log($input.value);
+      }
+
+      console.log("enter pressed");
+
+
+    };
+  }
 }
