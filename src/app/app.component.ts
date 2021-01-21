@@ -41,4 +41,11 @@ export class AppComponent {
           
     console.log(this.todoArray);
   }
+  public clearCompletedItem(): void {
+      this.todoArray = this.todoArray.filter((item: TodoItem) =>{
+      return !item.checked;
+      });
+
+
+  }
 }
