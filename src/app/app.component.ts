@@ -9,20 +9,7 @@ import { TodoItem } from './todo-item';
 export class AppComponent {
   title = 'todo-list';
 
-  public todoArray: Array<TodoItem> = [
-    {
-      title: 'révision angular',
-      checked: true,
-    },
-    {
-      title: 'cuisine',
-      checked: false,
-    },
-    {
-      title: 'promenade',
-      checked: false,
-    }
-  ];
+  public todoArray: Array<TodoItem> = [];
 
   public addItem($event: KeyboardEvent): void{
     if($event.code === "Enter"){
