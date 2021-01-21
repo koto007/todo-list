@@ -12,7 +12,7 @@ export class AppComponent {
   public todoArray: Array<TodoItem> = [
     {
       title: 'révision angular',
-      checked: false,
+      checked: true,
     },
     {
       title: 'cuisine',
