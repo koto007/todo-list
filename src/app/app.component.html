@@ -21,7 +21,8 @@
                 </ul>
                 <div class="card-footer d-flex justify-content-between">
                     <div>{{ todoArray.length }} items</div>
-                    <button class="btn" (click)="clearCompletedItem()">Clear completed</button>
+
+                    <button  *ngIf="atLeastOneChecked" class="btn" (click)="clearCompletedItem()">Clear completed</button>
                 </div>
               </div>
         </div>
