@@ -56,7 +56,8 @@ export class AppComponent {
       this.todoArray = this.todoArray.filter((item: TodoItem) =>{
       return !item.checked;
       });
-
-
   }
+  
+
+
 }

@@ -12,7 +12,7 @@
                     <li *ngFor="let item of todoArray, let itemIndex = index" class="list-group-item d-flex justify-content-between">
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" [attr.id]="'todo-' + itemIndex" [(ngModel)]="item.checked">
-                            <label class="form-check-label" [attr.for]="'todo-' + itemIndex">
+                            <label class="form-check-label" [class.done]="item.checked" [attr.for]="'todo-' + itemIndex">
                                 {{ item.title }}
                             </label>
                         </div>
