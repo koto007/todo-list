@@ -7,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CheckboxComponent implements OnInit {
 
-  constructor() { }
+  public id: string;
+
+  constructor() {
+    let rand = Math.random();
+    rand = rand * 10000000;
+    rand = Math.round(rand);
+    this.id = 'app-checkbox-' + rand;
+  }
 
   ngOnInit(): void {
   }
