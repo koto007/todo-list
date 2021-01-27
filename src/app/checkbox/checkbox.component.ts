@@ -6,14 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./checkbox.component.scss']
 })
 export class CheckboxComponent implements OnInit {
-
+  private static counter = 0;
   public id: string;
 
   constructor() {
-    let rand = Math.random();
-    rand = rand * 10000000;
-    rand = Math.round(rand);
-    this.id = 'app-checkbox-' + rand;
+    this.id = 'app-checkbox-' + CheckboxComponent.counter;
+    CheckboxComponent.counter++;
   }
 
   ngOnInit(): void {
