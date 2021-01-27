@@ -8,10 +8,16 @@ import { Component, Input, OnInit } from '@angular/core';
 export class CheckboxComponent implements OnInit {
   private static counter = 0;
   public id: string;
-  public checked = true;
+  @Input()
+  public checked = false;
 
   @Input()
   public label: string|null = null;
+
+
+  public name() {
+    
+  }
 
   constructor() {
     this.id = 'app-checkbox-' + CheckboxComponent.counter;
