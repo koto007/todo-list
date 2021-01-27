@@ -3,7 +3,12 @@
 // Import bootstrap from node_modules
 @import "~bootstrap/scss/bootstrap";
 
-
+* {
+    color: rgb(141, 138, 138);
+}
+.container {
+    margin-top: 50px;
+}
 .done {
     color: #999;
     text-decoration: line-through;
